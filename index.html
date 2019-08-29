@@ -15,6 +15,58 @@
 		<div class="jumbotron text-center bg-success text-white">
 			<h2>Train Times</h2>
         </div>
+
+        <div class="panel panel-success test-success">
+            <div class="panel-heading"><h3>Current Trains Schedule</h3>
+            <div class="panel-body">
+                <table class="table">
+                    <thread>
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination </th>
+                            <th>Frequency </th>
+                            <th>Next Arrival </th>
+                            <th>Minutes Away</th>
+                        </tr>
+                    </thread>
+                        <tbody id="add-row"></tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+
+        <div class ="panel panel-success text-success">
+            <div class="panel-heading">
+                <h3>Add Train </h3>
+            </div>
+
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label for="text">Train Name</label>
+                        <input type="text" class="form-control" id="train-name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="text">Destination</label>
+                        <input type="text" class="form-control" id="destination">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="text">First Train Time (HH:mm - Military Time)</label>
+                        <input type="text" class="form-control" id="first-train">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="text">Frequency(min)</label>
+                        <input type="text" class="form-control" id="frequency">
+                    </div>
+
+                    <button type="submit" id="add-train" class="btn btn-success" id="addtrain">Submit</button>
+
+                </form>
+            </div>
+        </div>
         
 </body>
 
